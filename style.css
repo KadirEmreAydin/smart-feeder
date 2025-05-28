@@ -1,0 +1,87 @@
+/* Sayfa genel stili */
+/* General page style */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Sayfa başlığı stili */
+/* Page header style */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Giriş alanları ve butonlar */
+/* Input fields and buttons */
+input[type="time"], button {
+  font-size: 1rem;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Bölüm kutuları */
+/* Section containers */
+section {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Kamera video öğesi */
+/* Video element for camera */
+video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 0.5rem 0;
+}
+
+/* Kamera bölümü hizalama */
+/* Align camera section */
+#camera {
+  text-align: center;
+}
+
+/* Geniş ekranlar için düzen */
+/* Layout for larger screens */
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    gap: 1rem;
+  }
+
+  section {
+    flex: 1;
+  }
+
+  #camera video {
+    max-width: 400px;
+  }
+}
+
+/* Yeni zaman ayarları düzeni */
+/* New time setting layout */
+.time-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.time-group {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

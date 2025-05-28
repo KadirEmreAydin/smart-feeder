@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akıllı Kedi Besleyici</title>
+
+  <!-- Stil dosyasını dahil ediyoruz -->
+  <!-- Including the external stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sayfa başlığı -->
+  <!-- Page header -->
+  <header>
+    <h1>Akıllı Besleyici</h1>
+    <!-- Smart Cat Feeder -->
+  </header>
+
+  <!-- Ana içerik alanı -->
+  <!-- Main content container -->
+  <main>
+    
+    <!-- Zamanlama ayarları bölümü -->
+    <!-- Scheduling section -->
+    <section>
+      <h2>Zamanlama Ayarları</h2>
+      <!-- Scheduling Settings -->
+
+      <!-- Mama zamanı seçici -->
+      <!-- Feeding time selector -->
+    <div class="time-row">
+    <div class="time-group">
+      <label for="feed-time">Mama Zamanı:</label>
+      <input type="time" id="feed-time" />
+      <button onclick="setFeedingTime()">Ayarla</button>
+    </div>
+      <!-- Set button for feeding time -->
+
+      <!-- Su zamanı seçici -->
+      <!-- Water time selector -->
+    <div class="time-group">
+      <label for="water-time">Su Zamanı:</label>
+      <input type="time" id="water-time" />
+      <button onclick="setWaterTime()">Ayarla</button>
+    </div>
+      <!-- Set button for watering time -->
+    </section>
+
+    <!-- Cihaz durumu bölümü -->
+    <!-- Device status section -->
+    <section>
+      <h2>Cihaz Durumu</h2>
+      <!-- Device Status -->
+      <p id="food-status">Mama Durumu: Bilinmiyor</p>
+      <!-- Food level status (initial) -->
+      <p id="water-status">Su Durumu: Bilinmiyor</p>
+      <!-- Water level status (initial) -->
+    </section>
+
+    <!-- Kamera görüntüsü bölümü -->
+    <!-- Camera view section -->
+    <section id="camera">
+      <h2>Canlı Kamera İzleme</h2>
+      <!-- Live Camera Monitoring -->
+      
+      <!-- Simülasyon için video öğesi -->
+      <!-- Simulated camera using video tag -->
+      <video id="cat-cam" autoplay muted loop>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      </video>
+
+      <!-- Kamera başlat/durdur butonu -->
+      <!-- Start/Stop camera button -->
+      <button onclick="toggleCamera()">Başlat / Durdur</button>
+    </section>
+  </main>
+
+  <!-- JavaScript dosyasını sayfanın sonuna dahil ediyoruz -->
+  <!-- Including the script file at the end of body -->
+  <script src="app.js"></script>
+</body>
+</html>

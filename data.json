@@ -1,0 +1,9 @@
+{
+  "deviceId": "feeder-001",
+  "status": {
+    "foodLevel": 72,
+    "waterLevel": 35,
+    "camera": true
+  },
+  "lastUpdated": "2025-05-23T10:30:00Z"
+}
